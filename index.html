@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   
   <header class="site-header">
-
-    <div class="container">
-
+    
+    <div class="container site-header__container">
+      
       <nav class="site-header__nav sitenav">
         
         <a href="index.html" class="sitenav__logo">
@@ -31,13 +31,31 @@
             <a href="#contact" class="site-header__link sitenav__link">contact</a>
           </li>
         </ul>
-
+        
         <a href="/" class="site-header__login sitenav__login">login</a>
-
+        
+        <ul class="site-header__socialist sitenav__socialist">
+          <li class="sitenav__sociaitem site-header__sociaitem">
+            <a href="/" class="sitenav__socialink site-header__socialink">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li class="sitenav__sociaitem site-header__sociaitem">
+            <a href="/" class="sitenav__socialink site-header__socialink">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        
       </nav>
-
+      
     </div>
-
+    
   </header>
   
   

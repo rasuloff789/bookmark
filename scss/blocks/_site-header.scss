@@ -1,6 +1,24 @@
-.site-header__container{
+.site-header__nav{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.site-header__tgbox{
+  display: contents;
+}
+
+.site-header__top-toggler{
+  display: contents;
+}
+
+.site-header__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header__logo-img{
+  display: block;
 }
 
 .site-header__navlist{
@@ -18,4 +36,86 @@
 
 .site-header__socialist{
   display: none;
+}
+
+@include breakpoint-down(750px){
+.site-header__container--open{
+  background: rgba(36, 42, 69,.95);
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+  .site-header__top-toggler{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .site-header__nav{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .site-header__tgbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .site-header__navlist {
+    margin-top: 50px;
+flex-direction: column;
+margin-left: 0;
+width: 100%;
+  }
+
+  .site-header__item{
+    width: 100%;
+    margin: 0;
+    &:last-child .site-header__link{
+      border-bottom: 1px solid $gray-color;
+    }
+  }
+
+.site-header__link{
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 2.30769px;
+  padding: 25px;
+  color: #fff;
+  border-top: 1px solid $gray-color;
+}
+
+.site-header__login{
+  padding: 16px;
+  margin-left: 0;
+  font-size: 20px;
+  letter-spacing: 2.30769px;
+  background-color: transparent;
+  border-color: #fff;
+color: #fff;
+margin-top: 25px;
+margin-bottom: auto;
+}
+
+  .site-header__socialist{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sitenav__sociaitem{
+    & + & {
+      margin-left: 40px;
+    }
+  }
 }

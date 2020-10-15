@@ -10,14 +10,23 @@
   
   <header class="site-header">
     
-    <div class="container site-header__container">
+    <div class="container site-header__container--open">
       
-      <nav class="site-header__nav sitenav">
+      <nav class="site-header__nav site-header__nav--open sitenav">
         
-        <a href="index.html" class="sitenav__logo">
-          <img class="sitenav__logo-img" src="img/site-header-logo.svg" width="150" height="25" alt="site-logo">
-        </a>
+        <div class="site-header__top-toggler">
+          <a href="index.html" class="sitenav__logo site-header__logo">
+            <img class="sitenav__logo-img site-header__logo-img" src="img/site-header-logo.svg" width="150" height="25" alt="site-logo">
+          </a>
+  
+          <button class="hamburger hamburger--squeeze">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
         
+       <div class="site-header__tgbox">
         <ul class="site-header__navlist sitenav__list">
           <li class="site-header__item sitenav__item">
             <a href="#features" class="site-header__link sitenav__link">features</a>
@@ -51,6 +60,10 @@
             </a>
           </li>
         </ul>
+       </div>
+        
+        
+        
         
       </nav>
       
